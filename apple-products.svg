@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 788" role="img" aria-labelledby="title desc">
+  <title id="title">Apple products website prototype preview</title>
+  <desc id="desc">A soft product website interface preview with phone, laptop, watch and navigation elements.</desc>
+  <rect width="1400" height="788" fill="#f4f8fb"/>
+  <rect x="80" y="78" width="1240" height="632" rx="26" fill="#fff" stroke="#dbe6ed"/>
+  <text x="132" y="150" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17212b">Apple Products</text>
+  <text x="990" y="149" font-family="Arial, sans-serif" font-size="18" fill="#637180">Mac</text>
+  <text x="1052" y="149" font-family="Arial, sans-serif" font-size="18" fill="#637180">iPhone</text>
+  <text x="1142" y="149" font-family="Arial, sans-serif" font-size="18" fill="#637180">Watch</text>
+  <text x="132" y="268" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#17212b">Compare products</text>
+  <text x="132" y="318" font-family="Arial, sans-serif" font-size="24" fill="#637180">A clean browsing concept for choosing the right device.</text>
+  <rect x="132" y="366" width="178" height="54" rx="27" fill="#17212b"/>
+  <text x="170" y="401" font-family="Arial, sans-serif" font-size="18" fill="#fff">View prototype</text>
+  <rect x="520" y="230" width="320" height="214" rx="18" fill="#dceafe"/>
+  <rect x="552" y="262" width="256" height="150" rx="10" fill="#ffffff" stroke="#9fb7c8"/>
+  <rect x="572" y="429" width="216" height="14" rx="7" fill="#9fb7c8"/>
+  <rect x="890" y="202" width="126" height="254" rx="34" fill="#17212b"/>
+  <rect x="902" y="222" width="102" height="214" rx="25" fill="#eaf6fd"/>
+  <circle cx="953" cy="381" r="34" fill="#cdeaff"/>
+  <rect x="1078" y="258" width="158" height="184" rx="38" fill="#f7ddd0"/>
+  <rect x="1110" y="290" width="94" height="120" rx="28" fill="#fff"/>
+  <circle cx="1157" cy="350" r="32" fill="#dcefe8"/>
+  <rect x="132" y="535" width="330" height="104" rx="14" fill="#f8fbfd" stroke="#dbe6ed"/>
+  <rect x="496" y="535" width="330" height="104" rx="14" fill="#f8fbfd" stroke="#dbe6ed"/>
+  <rect x="860" y="535" width="330" height="104" rx="14" fill="#f8fbfd" stroke="#dbe6ed"/>
+  <text x="164" y="580" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#17212b">Product cards</text>
+  <text x="528" y="580" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#17212b">Comparison flow</text>
+  <text x="892" y="580" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#17212b">Responsive layout</text>
+</svg>
