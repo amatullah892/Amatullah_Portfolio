@@ -2084,3 +2084,13 @@ footer span:nth-child(2) {
 
 
 
+
+
+/* Preserve the entire Apple Products prototype frame at every viewport size. */
+.case-detail-video {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center;
+}
