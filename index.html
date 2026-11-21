@@ -142,6 +142,39 @@
       order: 3;
     }
 
+    .hero-bottom {
+      display: block;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: last baseline;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .hero-actions .hero-note {
+      flex: 0 1 auto;
+      width: auto;
+      min-width: 0;
+      margin: 0;
+      transform: none;
+    }
+
+    .hero-note strong .hero-note-ending {
+      display: inline-block;
+      font: inherit;
+      color: inherit;
+      text-transform: none;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .hero-actions .scroll-cue {
+      margin-top: 0;
+    }
+
     .hero-mark {
       right: 52px;
       bottom: 18px;
@@ -257,14 +290,14 @@
 
       <div class="hero-bottom reveal">
         <p>A designer turning complicated systems into calm, useful experiences for real people.</p>
-        <a class="scroll-cue" href="#work"><span>Selected work</span><span aria-hidden="true">v</span></a>
+        <div class="hero-actions">
+          <aside class="margin-note hero-note" aria-label="Personal note">
+    <span>Currently curious about</span>
+            <strong>how to reduce<br>friction points to <span class="hero-note-ending">zero.<i aria-hidden="true">-&gt;</i></span></strong>
+          </aside>
+          <a class="scroll-cue" href="#work"><span>Selected work</span><span aria-hidden="true">v</span></a>
+        </div>
       </div>
-
-      <aside class="margin-note hero-note reveal" aria-label="Personal note">
-        <span>Currently curious about</span>
-        <strong>how to reduce<br>friction points to zero.</strong>
-        <i aria-hidden="true">-&gt;</i>
-      </aside>
 
       <div class="hero-mark" aria-hidden="true">03</div>
     </section>
