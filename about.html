@@ -37,8 +37,8 @@
     .bio-practice summary:hover { background: var(--blue); }
     .bio-practice details p { margin: 0 0 16px; max-width: 65ch; }
     .bio-practice summary:focus-visible { outline: 2px solid #345a74; outline-offset: 3px; }
-    .about-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .72fr); gap: 24px; align-items: center; }
-    .about-orbs { position: relative; min-height: 350px; pointer-events: none; }
+    .about-page { position: relative; isolation: isolate; min-height: 100vh; }
+    .about-orbs { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
     .about-orb {
       position: absolute;
       left: var(--x);
@@ -46,7 +46,7 @@
       width: min(var(--size), 22%);
       aspect-ratio: 1;
       border-radius: 50%;
-      opacity: .82;
+      opacity: .32;
       box-shadow: inset -6px -8px 16px #2d35391a, 0 12px 24px #3047541a;
       translate: -50% -50%;
       animation: about-drift var(--duration) ease-in-out var(--delay) infinite;
@@ -61,8 +61,8 @@
       75% { transform: translate(-10px, 0); }
     }
     @media (max-width: 760px) {
-      .about-intro { grid-template-columns: 1fr; gap: 8px; }
-      .about-orbs { min-height: 210px; width: min(100%, 420px); }
+
+
       .about-orb { width: min(calc(var(--size) * .7), 19%); }
     }
     @media (prefers-reduced-motion: reduce) {
@@ -70,7 +70,29 @@
     }
   </style>
 </head>
-<body>
+<body class="about-page">
+  <div class="about-orbs" aria-hidden="true">
+        <span class="about-orb about-orb--green" style="--x: 7%; --y: 10%; --size: 96px; --duration: 13s; --delay: -1s"></span>
+        <span class="about-orb about-orb--yellow" style="--x: 31%; --y: 9%; --size: 35px; --duration: 14s; --delay: -4s"></span>
+        <span class="about-orb about-orb--red" style="--x: 60%; --y: 6%; --size: 62px; --duration: 15s; --delay: -7s"></span>
+        <span class="about-orb about-orb--green" style="--x: 84%; --y: 12%; --size: 83px; --duration: 16s; --delay: -10s"></span>
+        <span class="about-orb about-orb--yellow" style="--x: 96%; --y: 20%; --size: 26px; --duration: 17s; --delay: -13s"></span>
+        <span class="about-orb about-orb--red" style="--x: 17%; --y: 24%; --size: 53px; --duration: 18s; --delay: -16s"></span>
+        <span class="about-orb about-orb--green" style="--x: 47%; --y: 22%; --size: 25px; --duration: 13s; --delay: -2s"></span>
+        <span class="about-orb about-orb--yellow" style="--x: 72%; --y: 29%; --size: 75px; --duration: 14s; --delay: -5s"></span>
+        <span class="about-orb about-orb--red" style="--x: 91%; --y: 38%; --size: 44px; --duration: 15s; --delay: -8s"></span>
+        <span class="about-orb about-orb--green" style="--x: 5%; --y: 41%; --size: 69px; --duration: 16s; --delay: -11s"></span>
+        <span class="about-orb about-orb--yellow" style="--x: 29%; --y: 40%; --size: 96px; --duration: 17s; --delay: -14s"></span>
+        <span class="about-orb about-orb--red" style="--x: 54%; --y: 45%; --size: 35px; --duration: 18s; --delay: -17s"></span>
+        <span class="about-orb about-orb--green" style="--x: 78%; --y: 51%; --size: 62px; --duration: 13s; --delay: -3s"></span>
+        <span class="about-orb about-orb--yellow" style="--x: 14%; --y: 57%; --size: 83px; --duration: 14s; --delay: -6s"></span>
+        <span class="about-orb about-orb--red" style="--x: 40%; --y: 62%; --size: 26px; --duration: 15s; --delay: -9s"></span>
+        <span class="about-orb about-orb--green" style="--x: 95%; --y: 65%; --size: 53px; --duration: 16s; --delay: -12s"></span>
+        <span class="about-orb about-orb--yellow" style="--x: 63%; --y: 72%; --size: 25px; --duration: 17s; --delay: -15s"></span>
+        <span class="about-orb about-orb--red" style="--x: 8%; --y: 82%; --size: 75px; --duration: 18s; --delay: -1s"></span>
+        <span class="about-orb about-orb--green" style="--x: 32%; --y: 87%; --size: 44px; --duration: 13s; --delay: -4s"></span>
+        <span class="about-orb about-orb--yellow" style="--x: 83%; --y: 89%; --size: 69px; --duration: 14s; --delay: -7s"></span>
+  </div>
   <header class="site-header">
     <a class="brand" href="index.html">Amatullah Patanwala<span>.</span></a>
     <nav aria-label="Primary navigation">
@@ -86,18 +108,6 @@
         <p>I was born in Dubai and moved to Melbourne to pursue a bachelor’s degree in Digital Design at RMIT University.</p>
         <p>My goal is to become a UX designer. I’m interested in understanding where people get stuck and turning what I learn into digital experiences that feel clear and easy to use.</p>
         <a href="index.html#work">View my work</a>
-      </div>
-      <div class="about-orbs" aria-hidden="true">
-        <span class="about-orb about-orb--green" style="--x: 20%; --y: 13%; --size: 108px; --duration: 15s; --delay: -1s"></span>
-        <span class="about-orb about-orb--yellow" style="--x: 70%; --y: 24%; --size: 85px; --duration: 17s; --delay: -2s"></span>
-        <span class="about-orb about-orb--red" style="--x: 46%; --y: 54%; --size: 69px; --duration: 13s; --delay: -3s"></span>
-        <span class="about-orb about-orb--green" style="--x: 83%; --y: 66%; --size: 45px; --duration: 18s; --delay: -4s"></span>
-        <span class="about-orb about-orb--yellow" style="--x: 14%; --y: 67%; --size: 38px; --duration: 14s; --delay: -5s"></span>
-        <span class="about-orb about-orb--red" style="--x: 48%; --y: 11%; --size: 28px; --duration: 16s; --delay: -6s"></span>
-        <span class="about-orb about-orb--green" style="--x: 58%; --y: 77%; --size: 23px; --duration: 12s; --delay: -7s"></span>
-        <span class="about-orb about-orb--yellow" style="--x: 91%; --y: 43%; --size: 19px; --duration: 15s; --delay: -8s"></span>
-        <span class="about-orb about-orb--red" style="--x: 30%; --y: 81%; --size: 26px; --duration: 17s; --delay: -9s"></span>
-        <span class="about-orb about-orb--green" style="--x: 5%; --y: 43%; --size: 22px; --duration: 13s; --delay: -10s"></span>
       </div>
     </section>
     <section class="bio-practice" aria-labelledby="practice-title">
