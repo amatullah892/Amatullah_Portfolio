@@ -26,6 +26,17 @@
     .about-intro a { display: inline-block; margin-top: 10px; color: #315e7b; text-decoration: underline; text-underline-offset: 4px; }
     .about-intro a:focus-visible { outline: 2px solid #315e7b; outline-offset: 4px; }
     .about-content { padding: 0 20px; }
+    .about-intro h1, .bio-practice h2 { color: #345a74; }
+    .bio-practice {
+      max-width: 1120px; margin: 0 auto clamp(36px, 7vw, 90px);
+      padding: 0 clamp(24px, 7vw, 90px); color: #435563;
+    }
+    .bio-practice h2 { margin: 0 0 12px; font: 600 clamp(30px, 4.5vw, 48px)/1.12 system-ui, sans-serif; letter-spacing: -.04em; }
+    .bio-practice > p { margin: 0 0 18px; }
+    .bio-practice details { border-bottom: 1px solid #dbe5ec; }
+    .bio-practice summary { padding: 16px 0; color: #345a74; font-weight: 650; cursor: pointer; }
+    .bio-practice details p { margin: 0 0 16px; max-width: 65ch; }
+    .bio-practice summary:focus-visible { outline: 2px solid #345a74; outline-offset: 3px; }
   </style>
 </head>
 <body>
@@ -43,6 +54,14 @@
       <p>I was born in Dubai and moved to Melbourne to pursue a bachelor’s degree in Digital Design at RMIT University.</p>
       <p>My goal is to become a UX designer. I’m interested in understanding where people get stuck and turning what I learn into digital experiences that feel clear and easy to use.</p>
       <a href="index.html#work">View my work</a>
+    </section>
+    <section class="bio-practice" aria-labelledby="practice-title">
+      <h2 id="practice-title">How I work</h2>
+      <p>Open each part of my practice to see how I approach it.</p>
+      <details open><summary>Research &amp; product strategy</summary><p>I use interviews and journey mapping to understand what people do, where they get stuck, and what a product should help them do next.</p></details>
+      <details><summary>Interaction design &amp; prototyping</summary><p>I turn findings into flows and prototypes, then use feedback to test the decisions that matter most.</p></details>
+      <details><summary>UI &amp; design systems</summary><p>I carry the work through to legible interfaces, accessible interactions, and reusable visual patterns.</p></details>
+      <details><summary>Sound, motion &amp; creative technology</summary><p>Working in audio, video, and 3D gives me another way to explore how a digital experience feels and moves.</p></details>
     </section>
   </main>
 </body>
