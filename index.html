@@ -358,6 +358,36 @@
   .case-study-links { margin: 0; padding-inline-start: 20px; }
   .case-study-links li + li { margin-top: 8px; }
 </style>
+  <style>
+    :root { --landing-header-height: 84px; --landing-gutter: clamp(20px, 3vw, 64px); }
+    .site-header {
+      height: var(--landing-header-height);
+      max-width: none;
+      padding-inline: var(--landing-gutter);
+    }
+    .hero {
+      min-height: calc(100vh - var(--landing-header-height));
+      min-height: calc(100svh - var(--landing-header-height));
+      max-width: none;
+      padding: clamp(24px, 5svh, 64px) var(--landing-gutter);
+      display: flex;
+      justify-content: space-between;
+      gap: clamp(12px, 3svh, 38px);
+    }
+    .hero h1 {
+      max-width: 18em;
+      font-size: clamp(32px, min(5.3vw, 10svh), 104px);
+      margin: 0;
+    }
+    .hero-bottom { max-width: none; }
+    .hero-actions { margin-top: clamp(18px, 5svh, 64px); }
+    @media (max-width: 760px) {
+      :root { --landing-header-height: 70px; }
+      .hero h1 { font-size: clamp(30px, min(8.8vw, 8svh), 58px); }
+      .hero-bottom p { font-size: clamp(15px, 3.8vw, 18px); }
+      .hero-actions .hero-note { margin-top: 0; }
+    }
+  </style>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
