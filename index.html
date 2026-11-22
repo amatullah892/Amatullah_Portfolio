@@ -347,6 +347,17 @@
     #work .case > .case-meta { margin: 0 0 12px; }
     #work .case > .case-meta span:first-child { color: var(--ink); font-size: clamp(15px, 2vw, 20px); font-weight: 700; }
   </style>
+<style>
+  .project-items { display: grid; gap: 22px; }
+  .project-items article { min-width: 0; }
+  .project-items article + article { padding-top: 20px; border-top: 1px solid var(--line); }
+  .project-items h3 { margin: 0 0 8px; font-size: 20px; }
+  .project-items h4 { margin: 16px 0 4px; }
+  .project-items p { max-width: 72ch; margin: 0 0 12px; }
+  .project-items video { width: min(100%, 620px); aspect-ratio: 16 / 9; object-fit: contain; }
+  .case-study-links { margin: 0; padding-inline-start: 20px; }
+  .case-study-links li + li { margin-top: 8px; }
+</style>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -455,7 +466,18 @@
         <span class="tool-list"><span>Reaper</span><span>Audio plugins</span></span>
         <span class="project-indicator" aria-hidden="true">+</span>
       </summary>
-      <div class="project-detail"><p>I build sound around the rhythm and physical weight of each scene, from individual foley cues to the full soundscape.</p></div>
+      <div class="project-detail project-items">
+        <article>
+          <h3>Earcons</h3>
+          <p>I built kitchen-themed sounds from scratch using foley recorded with knives, kitchen worktops, fire, and spoons.</p>
+          <video controls playsinline preload="none" aria-label="Earcons sound design preview" src="earcons.mp4"></video>
+        </article>
+        <article>
+          <h3>Pig Farmer</h3>
+          <p>I added sound to the animation, using rhythm, spatialization, and emotional storytelling to shape how each scene feels.</p>
+          <video controls playsinline preload="none" aria-label="Pig Farmer sound design preview" src="pig-farmer.mp4"></video>
+        </article>
+      </div>
     </details>
     <details class="project-entry" id="product-research">
       <summary class="project-row">
@@ -464,9 +486,13 @@
         <span class="tool-list"><span>Figma</span><span>Lyssna</span></span>
         <span class="project-indicator" aria-hidden="true">+</span>
       </summary>
-      <div class="project-detail"><p><a href="case-wellness-kit.html">Wellness Kit case study</a> · <a href="case-commit-app.html">Commit App case study</a></p>
-        <video src="apple-products-loop.mp4" controls playsinline preload="none" aria-label="Apple Products website prototype preview"></video>
-        <a href="case-apple-products.html">Apple Products website case study</a></div>
+      <div class="project-detail">
+        <ul class="case-study-links">
+          <li><a href="case-wellness-kit.html">Wellness Kit</a></li>
+          <li><a href="case-commit-app.html">Commit App</a></li>
+          <li><a href="case-apple-products.html">Apple Products</a></li>
+        </ul>
+      </div>
     </details>
     <details class="project-entry" id="motion">
       <summary class="project-row">
@@ -475,7 +501,18 @@
         <span class="tool-list"><span>Premiere Pro</span><span>After Effects</span></span>
         <span class="project-indicator" aria-hidden="true">+</span>
       </summary>
-      <div class="project-detail"><p>My motion work spans production, editing, and experiments designed around the scale and rhythm of the display.</p></div>
+      <div class="project-detail project-items">
+        <article>
+          <h3>Etherealism</h3>
+          <p>A moving-image work exploring water in different forms.</p>
+          <video controls playsinline preload="none" aria-label="Etherealism video preview" src="etherealism.mp4"></video>
+        </article>
+        <article>
+          <h3>Stop Looking at Me</h3>
+          <p>A film about the fear of looking closely at who we really are.</p>
+          <video controls playsinline preload="none" aria-label="Stop Looking at Me video preview" src="stop-looking-at-me.mp4"></video>
+        </article>
+      </div>
     </details>
     <details class="project-entry" id="creative-web">
       <summary class="project-row">
@@ -484,7 +521,16 @@
         <span class="tool-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></span>
         <span class="project-indicator" aria-hidden="true">+</span>
       </summary>
-      <div class="project-detail"><p>I explore how layout, motion, and interaction can shape the way people navigate a website.</p></div>
+      <div class="project-detail project-items">
+        <article>
+          <h3><a href="https://amatullah892.github.io/Assignment%203/">Maze Glider</a></h3>
+          <p>A horror twist on a classic maze game. Every time you hit a wall, it triggers a jump scare.</p>
+        </article>
+        <article>
+          <h3><a href="https://amatullah892.github.io/Assignment%202/">Healax</a></h3>
+          <p>A media player designed for a relaxing listening and viewing experience.</p>
+        </article>
+      </div>
     </details>
     <details class="project-entry" id="3d">
       <summary class="project-row">
@@ -493,7 +539,18 @@
         <span class="tool-list"><span>Unity</span><span>Blender</span></span>
         <span class="project-indicator" aria-hidden="true">+</span>
       </summary>
-      <div class="project-detail"><p>I use 3D environments to explore how people move through and experience digital spaces.</p></div>
+      <div class="project-detail project-items">
+        <article>
+          <h3><a href="https://play.unity.com/en/games/487b45e7-a2d8-4190-9b49-754bf524d8e9/newwww">Struggle · Transition · Resolution</a></h3>
+          <p>An emotional journey through three rooms, designed as a museum of emotions.</p>
+          <h4>Room 1 · Struggle</h4>
+          <p>Whispers and ghostly moans surround the visitor. I placed them throughout the room to evoke the self-judgment and fear I felt before my emotional transition.</p>
+          <h4>Room 2 · Transition</h4>
+          <p>Howling winds fill the space. Their raw, unpredictable movement reflects the discomfort of change and the push and pull of moving forward while feeling unsure.</p>
+          <h4>Room 3 · Resolution</h4>
+          <p>Forest ambience, birdsong, and gentle water by a pond evoke peace. The sounds come together as I emerge from the struggle feeling stronger, calmer, and more in tune with myself.</p>
+        </article>
+      </div>
     </details>
   </div>
 </section>
