@@ -6,36 +6,35 @@
   <meta name="description" content="About Amatullah Patanwala, a Digital Design student at RMIT University and aspiring UX designer.">
   <title>About | Amatullah Patanwala</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Manrope:wght@500;600;700&amp;display=swap" rel="stylesheet">
   <style>
-    body { min-height: 100vh; background: linear-gradient(145deg, #f9edf2 0%, #f9f7fa 47%, #e8f2fa 100%); }
+
     .about-intro {
-      max-width: 1120px;
+      max-width: var(--max);
       margin: clamp(20px, 5vw, 64px) auto;
-      padding: clamp(36px, 8vw, 104px) clamp(24px, 7vw, 90px);
-      background: rgba(255, 255, 255, .48);
-      border: 1px solid #dddfe9;
-      border-radius: 18px;
-      color: #17212b;
+      padding: clamp(36px, 8vw, 104px) 32px;
+      color: var(--ink);
     }
     .about-intro h1 {
       margin: 0 0 24px;
       font: 600 clamp(42px, 7vw, 82px)/1.05 Manrope, system-ui, sans-serif;
       letter-spacing: -.055em;
     }
-    .about-intro p { max-width: 57ch; margin: 0 0 16px; font-size: clamp(17px, 2vw, 22px); line-height: 1.65; color: #435563; }
-    .about-intro a { display: inline-block; margin-top: 10px; color: #934722; text-decoration: underline; text-underline-offset: 4px; }
+    .about-intro p { max-width: 57ch; margin: 0 0 16px; font-size: clamp(17px, 2vw, 22px); line-height: 1.65; color: var(--muted); }
+    .about-intro a { display: inline-block; margin-top: 10px; color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
     .about-intro a:focus-visible { outline: 2px solid #315e7b; outline-offset: 4px; }
-    .about-content { padding: 0 20px; }
-    .about-intro h1 { color: #8e4468; }
-    .bio-practice h2 { color: #984822; }
+    .about-content { padding: 0; }
+    .about-intro h1 { color: var(--ink); }
+    .bio-practice h2 { color: var(--ink); }
     .bio-practice {
-      max-width: 1120px; margin: 0 auto clamp(36px, 7vw, 90px);
-      padding: 0 clamp(24px, 7vw, 90px); color: #435563;
+      max-width: var(--max); margin: 0 auto clamp(36px, 7vw, 90px);
+      padding: 36px 32px 0; border-top: 1px solid var(--line); color: var(--muted);
     }
-    .bio-practice h2 { margin: 0 0 12px; font: 600 clamp(30px, 4.5vw, 48px)/1.12 system-ui, sans-serif; letter-spacing: -.04em; }
+    .bio-practice h2 { margin: 0 0 12px; font: 600 clamp(30px, 4.5vw, 48px)/1.12 Manrope, sans-serif; letter-spacing: -.04em; }
     .bio-practice > p { margin: 0 0 18px; }
-    .bio-practice details { border-bottom: 1px solid #dbe5ec; }
-    .bio-practice summary { padding: 16px 0; color: #874561; font-weight: 650; cursor: pointer; }
+    .bio-practice details { border-bottom: 1px solid var(--line); }
+    .bio-practice summary { padding: 16px 0; color: var(--ink); font-weight: 650; cursor: pointer; }
+    .bio-practice summary:hover { background: var(--blue); }
     .bio-practice details p { margin: 0 0 16px; max-width: 65ch; }
     .bio-practice summary:focus-visible { outline: 2px solid #345a74; outline-offset: 3px; }
   </style>
@@ -46,7 +45,7 @@
     <nav aria-label="Primary navigation">
       <a href="index.html#work">Work</a>
       <a href="about.html" aria-current="page">About</a>
-      <a href="index.html#other-work">Creative work</a>
+      <a class="contact-link" href="mailto:Patanwalaaa@gmail.com">Let's talk <span aria-hidden="true">-&gt;</span></a>
     </nav>
   </header>
   <main class="about-content">
